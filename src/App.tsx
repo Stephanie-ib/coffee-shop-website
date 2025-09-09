@@ -1,10 +1,15 @@
 import './index.css';
+import Home from './components/Home';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 to-pink-500">
-      <h1 className="text-4xl font-bold text-white">Hello, React + TS + Tailwind! 🎉</h1>
-    </div>
+    <>
+      <Header />
+      <Home />
+      <Footer />
+    </>
   )
 }
 
