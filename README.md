@@ -1,69 +1,83 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ☕ Brussels Brewery – Coffee Shop Web App
 
-Currently, two official plugins are available:
+A modern, interactive **coffee shop web application** built with **React**, **TypeScript**, **Tailwind CSS**, and **Lucide Icons**.
+This project simulates an online ordering experience for a fictional Belgian coffee brand, **Brussels Brewery**, where users can browse menus, filter products, view locations, and manage their cart.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* 🏠 **Homepage** with hero section, brand highlights, and stats.
+* 📜 **Menu Page** with:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+  * Category filter (Coffee, Beverages, Pastries).
+  * Price range slider.
+  * Product grid with images, descriptions, ratings, and add-to-cart functionality.
+* 📍 **Locations Page** with details for Brussels branches (address, phone, and opening hours).
+* 🛒 **Cart System**:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+  * Add, remove, and update item quantities.
+  * Automatic total calculation.
+  * Checkout confirmation modal.
+* 📱 **Responsive Design** (mobile and desktop-friendly).
+* 🎨 **Modern UI/UX** with animations, gradients, and hover effects.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🛠️ Tech Stack
+
+* **React (with TypeScript)** – Component-based architecture.
+* **Tailwind CSS** – Utility-first styling.
+* **Lucide Icons** – Clean, scalable icons.
+* **Unsplash Images** – High-quality free images for products & backgrounds.
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/brussels-brewery.git
+cd brussels-brewery
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install dependencies**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+3. **Start the development server**
+
+```bash
+npm run dev
+```
+
+4. Open in browser → [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🔮 Future Improvements
+
+* 🔑 User authentication & account system.
+* 💳 Online payments integration.
+* 📦 Order history tracking.
+* 🌍 Multi-language support.
+* ⭐ Product reviews & ratings system.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to fork this repo and submit a PR.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
