@@ -6,7 +6,7 @@ import LocationsPage from './pages/LocationsPage';
 import Header from './components/Header';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
-import CheckoutSuccessModal from './components/CheckoutSuccessModal'; // Fixed import path
+import CheckoutSuccessModal from './components/CheckoutSuccessModal';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState('home');
